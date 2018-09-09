@@ -2,7 +2,7 @@
 
 [![Help Contribute to Open Source](https://www.codetriage.com/soroushatarod/terraform-cloudfront-wordpress/badges/users.svg)](https://www.codetriage.com/soroushatarod/terraform-cloudfront-wordpress)
 
-Terraform module which creates the CloudFront distribution for a WordPress website
+Terraform module which creates the CloudFront distribution for a WordPress website with pre-configured settings.
 
 
 ## Example
@@ -26,7 +26,7 @@ module "cloudfront_wordpress" {
 
 ## Terraform version
 
-Terraform version 0.11.7) or newer is required for this module to work.
+Terraform version 0.11.7 or newer is required for this module to work.
 
 
 
