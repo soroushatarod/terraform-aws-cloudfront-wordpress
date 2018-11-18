@@ -49,7 +49,7 @@ Terraform version 0.11.7 or newer is required for this module to work.
 | default_ttl | The default amount of time an object is ina CloudFront cache before it sends another request in absence of Cache-Control | string | 300 | no |
 | max_ttl | The maxium amount of seconds you want CloudFront to cache the object, before feching it from the origin | string | 31536000 | no |
 | enabled | Whether the distribution is enabled or not | string | `true` | no |
-
+| price_class | The price class to use for the distribution | string | PriceClass_All | no |
 
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
@@ -64,4 +64,3 @@ Maintained by [Soroush Atarod](https://github.com/soroushatarod). Find out more,
 ## License
 
 Apache 2 Licensed. See LICENSE for full details.
-

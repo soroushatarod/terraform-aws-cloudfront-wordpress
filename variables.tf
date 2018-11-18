@@ -68,5 +68,11 @@ variable "max_ttl" {
   default     = 31536000
 }
 
+variable "price_class" {
+  description = "The price class for this distribution. One of PriceClass_All, PriceClass_200, PriceClass_100"
+  default     = "PriceClass_All"
+  type        = "string"
+}
+
 # variable "acm_certificate_arn" {}
 

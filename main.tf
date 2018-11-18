@@ -19,6 +19,8 @@ resource "aws_cloudfront_distribution" "cdn" {
     }
   }
 
+  price_class = "${var.price_class}"
+
   restrictions {
     geo_restriction {
       restriction_type = "none"
