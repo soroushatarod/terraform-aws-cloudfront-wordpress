@@ -49,6 +49,8 @@ Terraform version 0.11.7 or newer is required for this module to work.
 | default_ttl | The default amount of time an object is ina CloudFront cache before it sends another request in absence of Cache-Control | string | 300 | no |
 | max_ttl | The maxium amount of seconds you want CloudFront to cache the object, before feching it from the origin | string | 31536000 | no |
 | enabled | Whether the distribution is enabled or not | string | `true` | no |
+| origin_ssl_protocols | The SSL/TLS protocols to use when talking to the origin | list | `["TLSv1.2", "TLSv1.1"]` | no |
+| minimum_protocol_version | The minimum version of the SSL protocol that you want CloudFront to use for HTTPS connections. | string | TLSv1.1_2016 | no |
 
 
 
@@ -64,4 +66,3 @@ Maintained by [Soroush Atarod](https://github.com/soroushatarod). Find out more,
 ## License
 
 Apache 2 Licensed. See LICENSE for full details.
-
