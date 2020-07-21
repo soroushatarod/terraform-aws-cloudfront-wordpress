@@ -15,7 +15,7 @@ resource "aws_cloudfront_distribution" "cdn" {
       http_port              = "${var.http_port}"
       https_port             = "${var.https_port}"
       origin_protocol_policy = "${var.origin_protocol_policy}"
-      origin_ssl_protocols   = ["SSLv3", "TLSv1"]
+      origin_ssl_protocols   = ["${var.origin_ssl_protocols}"]
     }
   }
 
@@ -31,7 +31,7 @@ resource "aws_cloudfront_distribution" "cdn" {
     cloudfront_default_certificate = false
     acm_certificate_arn            = "${var.acm_certificate_arn}"
     ssl_support_method             = "sni-only"
-    minimum_protocol_version       = "TLSv1.1_2016"
+    minimum_protocol_version       = "${var.minimum_protocol_version}"
   }
 
   default_cache_behavior {
