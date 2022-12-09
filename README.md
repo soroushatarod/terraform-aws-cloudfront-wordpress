@@ -62,7 +62,7 @@ Terraform version 0.11.7 or newer is required for this module to work.
 
 ## Authors
 
-Maintained by [Soroush Atarod](https://github.com/soroushatarod). Find out more, please visit [InfinityPP](https://www.infinitypp.com/amazon-aws/terraform-cloudfront-wordpress-module/)
+Maintained by [Soroush Atarod](https://github.com/soroushatarod). Find out more, please visit [InfinityPP](https://www.yolra.net/amazon-aws/terraform-cloudfront-wordpress-module/)
 
 ## License
 
