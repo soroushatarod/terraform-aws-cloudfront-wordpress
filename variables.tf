@@ -55,7 +55,7 @@ variable "origin_protocol_policy" {
 
 variable "min_ttl" {
   description = "The minimum time you want objects to stay in CloudFront"
-  default     = 0
+  default     = 1
 }
 
 variable "default_ttl" {
