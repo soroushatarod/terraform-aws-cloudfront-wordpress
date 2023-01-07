@@ -2,7 +2,7 @@
 
 [![Help Contribute to Open Source](https://www.codetriage.com/soroushatarod/terraform-cloudfront-wordpress/badges/users.svg)](https://www.codetriage.com/soroushatarod/terraform-cloudfront-wordpress)
 
-Terraform module which creates the CloudFront distribution for a WordPress website with pre-configured settings.
+Terraform module, which creates the CloudFront distribution for a WordPress website with pre-configured settings based on the official AWS Whitepaper: https://docs.aws.amazon.com/whitepapers/latest/best-practices-wordpress/cloudfront-distribution-creation.html  
 
 
 ## Example
