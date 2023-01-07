@@ -59,7 +59,7 @@ variable "min_ttl" {
 }
 
 variable "default_ttl" {
-  description = "The default amount of time an object is ina CloudFront cache before it sends another request in absence of Cache-Control"
+  description = "The default amount of time an object is in a CloudFront cache before it sends another request in absence of Cache-Control"
   default     = 300
 }
 
