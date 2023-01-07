@@ -95,4 +95,25 @@ resource "aws_cloudfront_distribution" "cdn" {
     compress               = true
     viewer_protocol_policy = "redirect-to-https"
   }
+
+  ordered_cache_behavior {
+    path_pattern     = "wp-content/*"
+    allowed_methods  = ["GET", "HEAD"]
+    cached_methods   = ["GET", "HEAD"]
+    target_origin_id = "${var.origin_id}"
+
+    forwarded_values {
+      query_string = true
+      headers      = ["Host", "Origin"]
+
+      cookies {
+        forward           = "whitelist"
+        whitelisted_names = "${var.cookies_whitelisted_names}"
+      }
+    }
+
+    compress               = true
+    viewer_protocol_policy = "redirect-to-https"
+  }
+
 }

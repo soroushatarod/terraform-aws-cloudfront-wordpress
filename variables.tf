@@ -50,7 +50,8 @@ variable "https_port" {
 }
 
 variable "origin_protocol_policy" {
-  description = "Either one of them (http-only, https-only,match-viewer) "
+  description = "Either one of them (http-only, https-only, match-viewer)"
+  default     = "match-viewer"
 }
 
 variable "min_ttl" {
