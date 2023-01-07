@@ -64,7 +64,7 @@ variable "default_ttl" {
 }
 
 variable "max_ttl" {
-  description = "The maxium amount of seconds you want CloudFront to cache the object, before feching it from the origin"
+  description = "The maximum amount of seconds you want CloudFront to cache the object, before fetching it from the origin"
   default     = 31536000
 }
 
