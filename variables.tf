@@ -54,6 +54,11 @@ variable "origin_protocol_policy" {
   default     = "match-viewer"
 }
 
+variable "default_viewer_protocol_policy" {
+  description = "Either one of them (https-only, redirect-to-https, allow-all)"
+  default     = "allow-all"
+}
+
 variable "min_ttl" {
   description = "The minimum time you want objects to stay in CloudFront"
   default     = 1

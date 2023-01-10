@@ -50,7 +50,7 @@ resource "aws_cloudfront_distribution" "cdn" {
     }
 
     compress               = true
-    viewer_protocol_policy = "allow-all"
+    viewer_protocol_policy = "${var.default_viewer_protocol_policy}"
     min_ttl                = "${var.min_ttl}"
     default_ttl            = "${var.default_ttl}"
     max_ttl                = "${var.max_ttl}"
