@@ -2,7 +2,7 @@
 
 [![Help Contribute to Open Source](https://www.codetriage.com/soroushatarod/terraform-cloudfront-wordpress/badges/users.svg)](https://www.codetriage.com/soroushatarod/terraform-cloudfront-wordpress)
 
-Terraform module which creates the CloudFront distribution for a WordPress website with pre-configured settings.
+Terraform module, which creates the CloudFront distribution for a WordPress website with pre-configured settings based on the official AWS Whitepaper: https://docs.aws.amazon.com/whitepapers/latest/best-practices-wordpress/cloudfront-distribution-creation.html  
 
 
 ## Example
@@ -14,7 +14,6 @@ module "cloudfront_wordpress" {
    domain_name = "example.com"
    origin_id = "E22XRTe7wQ72"
    enabled = true
-   origin_protocol_policy = "http-only"
    acm_certificate_arn = "arn:aws:acm:us-east-1:20:certificate/9489-60"
    tags = {
      name = "production"
@@ -40,7 +39,7 @@ Terraform version 0.11.7 or newer is required for this module to work.
 | domain_name | The website root domain name | string | `false` | yes |
 | origin_id | Unique identifer for the origin example: master_origin | string | `false` | yes |
 | acm_certificate_arn | The SSL certificate ARN (Amazon Resource Name). This can be found on the “Certificate Manager” dashboard. | string | `false` | yes |
-| origin_protocol_policy | Either one of them (http-only, https-only,match-viewer) | string | `false` | yes
+| origin_protocol_policy | Either one of them (http-only, https-only,match-viewer) | string | `match-viewer` | yes
 | tags | Tags to assign to the distribution | string | `<map>` | yes |
 | cookies_whitelisted_names | List of cookies to be whitelisted. By default has the WordPress cookies | string | `<list>` | no |
 | http_port | The HTTP port which Cloudfront should connect to the origin | string | 80 | no |

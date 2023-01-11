@@ -50,21 +50,27 @@ variable "https_port" {
 }
 
 variable "origin_protocol_policy" {
-  description = "Either one of them (http-only, https-only,match-viewer) "
+  description = "Either one of them (http-only, https-only, match-viewer)"
+  default     = "match-viewer"
+}
+
+variable "default_viewer_protocol_policy" {
+  description = "Either one of them (https-only, redirect-to-https, allow-all)"
+  default     = "allow-all"
 }
 
 variable "min_ttl" {
   description = "The minimum time you want objects to stay in CloudFront"
-  default     = 0
+  default     = 1
 }
 
 variable "default_ttl" {
-  description = "The default amount of time an object is ina CloudFront cache before it sends another request in absence of Cache-Control"
-  default     = 300
+  description = "The default amount of time an object is in a CloudFront cache before it sends another request in absence of Cache-Control"
+  default     = 86400
 }
 
 variable "max_ttl" {
-  description = "The maxium amount of seconds you want CloudFront to cache the object, before feching it from the origin"
+  description = "The maximum amount of seconds you want CloudFront to cache the object, before fetching it from the origin"
   default     = 31536000
 }
 
