@@ -1,4 +1,4 @@
-# CLoudFront WordPress Terraform module
+# CloudFront WordPress Terraform module
 
 [![Help Contribute to Open Source](https://www.codetriage.com/soroushatarod/terraform-cloudfront-wordpress/badges/users.svg)](https://www.codetriage.com/soroushatarod/terraform-cloudfront-wordpress)
 
