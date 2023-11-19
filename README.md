@@ -1,7 +1,5 @@
 # CloudFront WordPress Terraform module
 
-[![Help Contribute to Open Source](https://www.codetriage.com/soroushatarod/terraform-cloudfront-wordpress/badges/users.svg)](https://www.codetriage.com/soroushatarod/terraform-cloudfront-wordpress)
-
 Terraform module, which creates the CloudFront distribution for a WordPress website with pre-configured settings based on the official AWS Whitepaper: https://docs.aws.amazon.com/whitepapers/latest/best-practices-wordpress/cloudfront-distribution-creation.html  
 
 
@@ -61,7 +59,7 @@ Terraform version 0.11.7 or newer is required for this module to work.
 
 ## Authors
 
-Maintained by [Soroush Atarod](https://github.com/soroushatarod). Find out more, please visit [InfinityPP](https://www.infinitypp.com/amazon-aws/terraform-cloudfront-wordpress-module/)
+Maintained by [Soroush Atarod](https://github.com/soroushatarod). Find out more, please visit [InfinityPP](https://www.infinitypp.com/amazon-aws/hosting-a-scalable-wordpress-architecture-on-aws/)
 
 ## License
 
